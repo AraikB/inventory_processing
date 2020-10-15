@@ -21,5 +21,3 @@ def convert_resize_image():
             thefile = re.search(f_param, filename)
             new_im = im.convert('RGB').resize((600,400)).save("supplier-data/images/"+str(thefile[1])+".jpeg", "JPEG")
             dontrepeat.append(str(filename))
-
-convert_resize_image()
