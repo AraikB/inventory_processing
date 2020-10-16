@@ -4,10 +4,12 @@ import os
 import requests
 
 
-BASEPATH_SUPPLIER_TEXT_DES = os.path.expanduser('~') + '/supplier-data/descriptions/'
+#BASEPATH_SUPPLIER_TEXT_DES = os.path.expanduser('~') + '/supplier-data/descriptions/'
+BASEPATH_SUPPLIER_TEXT_DES = "supplier-data/descriptions/"
 list_text_files = os.listdir(BASEPATH_SUPPLIER_TEXT_DES)
 
-BASEPATH_SUPPLIER_IMAGE = os.path.expanduser('~') + '/supplier-data/images/'
+#BASEPATH_SUPPLIER_IMAGE = os.path.expanduser('~') + '/supplier-data/images/'
+BASEPATH_SUPPLIER_IMAGE = "supplier-data/images/"
 list_image_files = os.listdir(BASEPATH_SUPPLIER_IMAGE)
 list_images = [image_name for image_name in list_image_files if '.jpeg' in image_name]
 
