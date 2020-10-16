@@ -9,4 +9,5 @@ def upload_images():
     if filename.endswith(".jpeg") and not str(filename) in dontrepeat :
       with open(directory+"/"+filename, "rb") as opened:
         r = requests.post(url, files={'file':opened})
-        return r
+       
+upload_images()
